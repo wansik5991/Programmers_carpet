@@ -12,7 +12,7 @@ def solution(brown, yellow):
     for i in range(len(divisor) // 2 + 1) :
         x = divisor[i]
         y = (brown+yellow) // x
-        if (x*y - (x-2) * (y-2)) == brown :
+        if 2 * (x+y-2) == brown :
             answer = sorted([x,y], reverse=True)
             break
     return answer
